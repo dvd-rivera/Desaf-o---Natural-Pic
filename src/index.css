@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  background-color: #171414;
+}
+
+.App {
+  font-family: "Maitree", serif;
+  text-align: center;
+  color: #43a047;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+
+/* Navbar */
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar {
+  background: #43a047;
+  padding: 20px;
+  color: white;
+}
+
+/* gallery */
+.gallery {
+  display: grid;
+  gap: 10px;
+}
+
+.grid-columns-5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+.grid-columns-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.gallery .photo {
+  cursor: pointer;
+  padding: 10px 10px 0px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: left;
+  text-shadow: 0px 0px 15px black;
+}
+
+.gallery .photo:hover {
+  box-shadow: 0px 0px 2px 1px black;
+}
+
+.gallery .photo svg {
+  align-self: flex-end;
+}
+
+.p-3 {
+  padding: 30px;
+}
+
+.card-photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+  max-height: 300px;
+  height: 200px;
+  border-radius: 12px;
+  position: relative;
+  z-index: 9;
+}
+
+.card-photo img{
+  /* height: 100%; */
+  min-width: 200%;
+  
+}
+
+.card-photo button{ 
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: red;
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0.4);
+  border: none;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-photo button:hover{ 
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.card-photo button img{ 
+  color: red;
+  width: 40px;
+  height: 40px;
+}
